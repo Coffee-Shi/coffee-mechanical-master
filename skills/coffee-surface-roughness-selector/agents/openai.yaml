@@ -1,0 +1,7 @@
+interface:
+  display_name: "Coffee机械大师-表面粗糙度选择"
+  short_description: "根据表面用途、配合和图纸信息推荐合适的Ra粗糙度"
+  default_prompt: "使用 $coffee-surface-roughness-selector 分析这个机械表面的用途或图纸，并推荐合适的Ra粗糙度。"
+policy:
+  allow_implicit_invocation: true
+
