@@ -8,7 +8,23 @@
 - 识别图纸中已有的粗糙度符号、配合代号、公差和引出位置。
 - 区分“读取图上已有标注”和“为尚未标注的表面重新选值”。
 - 为推荐值提供典型加工方法、判断依据、关键假设和需要确认的问题。
-- 在可用时借助 `cad-viewer` 查看 DXF、STEP/STP、STL、3MF 等文件中的目标几何表面。
+- 对 DXF、STEP/STP、STL、3MF 等 CAD 文件，调用 `text-to-cad` 提供的 `cad-viewer` 查看目标几何表面。
+
+## 前置依赖：text-to-cad
+
+使用本 Skill 前，建议先安装 [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) Skill 集合。分析 CAD 文件时，本 Skill 需要调用其中的 `cad-viewer`；因此至少应提前安装 `skills/cad-viewer`，推荐安装仓库 `skills/` 目录下的完整 Skill 集合。
+
+可在 Codex 中提出：
+
+```text
+从 https://github.com/earthtojake/text-to-cad 安装 skills 目录下的全部 Skill，至少安装 skills/cad-viewer。
+```
+
+依赖范围说明：
+
+- DXF、STEP/STP、STL、3MF 等 CAD 文件：使用 `text-to-cad` 的 `cad-viewer` 辅助查看和定位表面。
+- 需要根据自然语言创建或修改 CAD 模型时：可继续使用 `text-to-cad` 的 `cad` Skill。
+- JPG、PNG、截图和扫描 PDF：由 Codex 的视觉能力识别，不经过 `cad-viewer`；但粗糙度选型仍由本 Skill 完成。
 
 ## 安装
 
