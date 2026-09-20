@@ -3,7 +3,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
-$TaskLabel = 'Coffee机械大师自动更新'
+$TaskLabel = 'Coffee Mechanical Master auto-update'
 $LogDirectory = Join-Path $env:USERPROFILE '.codex\logs'
 $LogPath = Join-Path $LogDirectory 'coffee-mechanical-master-update.log'
 
@@ -34,19 +34,19 @@ try {
         throw 'Python launcher py.exe is not available for update validation.'
     }
 
-    $dirty = Invoke-RepositoryGit @('status', '--porcelain', '--untracked-files=no')
+    $dirty = @(Invoke-RepositoryGit @('status', '--porcelain', '--untracked-files=no'))
     if ($dirty.Count -gt 0) {
         throw 'Local tracked changes exist; update skipped to preserve them.'
     }
 
     Invoke-RepositoryGit @('fetch', '--quiet', 'origin', 'main') | Out-Null
-    $localSha = (Invoke-RepositoryGit @('rev-parse', 'HEAD'))[0].Trim()
-    $remoteSha = (Invoke-RepositoryGit @('rev-parse', 'origin/main'))[0].Trim()
+    $localSha = ([string](Invoke-RepositoryGit @('rev-parse', 'HEAD'))).Trim()
+    $remoteSha = ([string](Invoke-RepositoryGit @('rev-parse', 'origin/main'))).Trim()
     if ($localSha -eq $remoteSha) {
         exit 0
     }
 
-    $mergeBase = (Invoke-RepositoryGit @('merge-base', 'HEAD', 'origin/main'))[0].Trim()
+    $mergeBase = ([string](Invoke-RepositoryGit @('merge-base', 'HEAD', 'origin/main'))).Trim()
     if ($mergeBase -ne $localSha) {
         throw 'Local and remote histories diverged; only fast-forward updates are allowed.'
     }
