@@ -29,7 +29,7 @@ powershell -ExecutionPolicy Bypass -File `
   "$HOME/.codex/skills/coffee-mechanical-master/scripts/register-auto-update.ps1"
 ```
 
-注册脚本创建当前用户计划任务 `CoffeeMechanicalMasterSkillAutoUpdate`，默认每 15 分钟检查 `origin/main`。只有满足以下条件才更新：
+注册脚本创建当前用户计划任务 `CoffeeMechanicalMasterSkillAutoUpdate`，默认每天 09:00 检查一次 `origin/main`。如需更换时间，可向注册脚本传入 `-At "HH:mm"`。只有满足以下条件才更新：
 
 1. 本地没有已跟踪改动；
 2. 远端是当前提交的快进版本；
