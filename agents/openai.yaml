@@ -1,0 +1,6 @@
+interface:
+  display_name: "Coffee机械大师"
+  short_description: "统一选择机械表面粗糙度、孔轴公差配合及加工路线"
+  default_prompt: "使用 $coffee-mechanical-master 分析这个机械表面或孔轴配合；信息不足时先提问，再从知识库给出粗糙度、公差配合和加工建议。"
+policy:
+  allow_implicit_invocation: true

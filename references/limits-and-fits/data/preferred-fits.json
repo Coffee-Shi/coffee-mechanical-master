@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "source": "https://www.jlc-jdgf.com/mcbook/new02104.htm",
+  "supporting_source": "https://www.jlc-jdgf.com/mcbook/2-2-10.htm",
+  "fallback": "未在知识库中找到合适的公差配合，是否让人工智能自己思考。",
+  "families": [
+    {
+      "id": "precision_sliding",
+      "name": "小间隙精密滑动",
+      "fit_type": "间隙配合",
+      "primary_fit": "H7/g6",
+      "alternatives": ["H6/g5", "H8/g7", "G6/h5", "G7/h6"],
+      "max_diameter_mm": 3150,
+      "keywords": ["精密滑动", "不回转滑动", "滑阀", "精密连杆轴承", "插销定位", "精密导向"],
+      "basis": "`g` 间隙很小，最适合不回转的精密滑动；来源举例包括活塞、滑阀、精密连杆轴承和插销。",
+      "assembly": "加油后手旋/精密滑入"
+    },
+    {
+      "id": "normal_running",
+      "name": "普通润滑转动",
+      "fit_type": "间隙配合",
+      "primary_fit": "H7/f6",
+      "alternatives": ["H6/f5", "H8/f7", "H8/f8", "H9/f9", "F6/h5", "F7/h6", "F8/h7", "F8/h8", "F9/h9"],
+      "max_diameter_mm": 500,
+      "keywords": ["普通润滑油", "普通润滑脂", "一般转动配合", "齿轮箱转轴", "小电动机转轴", "泵转轴", "普通滑动轴承"],
+      "basis": "`f` 多用 IT6–IT8 的一般转动配合，适用于温度影响不大的普通油/脂润滑支承。",
+      "assembly": "手推滑入"
+    },
+    {
+      "id": "large_clearance_running",
+      "name": "明显间隙高速/多支点转动",
+      "fit_type": "间隙配合",
+      "primary_fit": "H8/e7",
+      "alternatives": ["H8/e8", "H9/e9", "E8/h7", "E8/h8", "E9/h9"],
+      "max_diameter_mm": 500,
+      "keywords": ["高速支承", "大跨距", "多支点", "明显间隙", "工作发热", "大型重载支承"],
+      "basis": "`e` 多用 IT7–IT9，适用于明显间隙、大跨距、多支点或高速重载支承。",
+      "assembly": "手轻推进"
+    },
+    {
+      "id": "loose_running",
+      "name": "松转动或大直径滑动支承",
+      "fit_type": "间隙配合",
+      "primary_fit": "H9/d9",
+      "alternatives": ["H8/d8", "D8/h8", "D9/h9"],
+      "max_diameter_mm": 3150,
+      "keywords": ["松的转动", "大直径滑动轴承", "密封盖", "空转皮带轮", "滑轮与轴", "球磨机滑动支承"],
+      "basis": "`d` 适用 IT7–IT11 的松转动和大直径滑动支承。",
+      "assembly": "手轻推进"
+    },
+    {
+      "id": "very_loose_running",
+      "name": "特大间隙慢速配合",
+      "fit_type": "间隙配合",
+      "primary_fit": "H11/c11",
+      "alternatives": ["C11/h11"],
+      "max_diameter_mm": 500,
+      "keywords": ["特别大间隙", "慢速松弛", "工况很差", "装配方便的很松配合", "粗加工轴承"],
+      "basis": "`c` 可得到很大间隙，用于慢速、松弛、工况差或为装配必须保证大间隙的场合。",
+      "assembly": "宽松手装"
+    },
+    {
+      "id": "high_temperature_running",
+      "name": "高温紧密动配合",
+      "fit_type": "间隙配合",
+      "primary_fit": "H8/c7",
+      "alternatives": [],
+      "max_diameter_mm": 500,
+      "keywords": ["高温紧密动配合", "排气阀与导管", "轴在高温工作"],
+      "basis": "来源明确举例 H8/c7 用于轴在高温工作的紧密动配合，如内燃机排气阀与导管。",
+      "assembly": "手轻推进"
+    },
+    {
+      "id": "precision_location_clearance",
+      "name": "精密定位间隙配合",
+      "fit_type": "间隙配合",
+      "primary_fit": "H7/h6",
+      "alternatives": ["H6/h5", "H8/h7"],
+      "max_diameter_mm": 3150,
+      "keywords": ["无相对转动", "精密定位", "一般定位配合", "转矩由键传递", "紧固件传递转矩"],
+      "basis": "`h` 广泛用于无相对转动的一般定位，在无温度和变形影响时也可精密滑动。",
+      "assembly": "加油后手旋进"
+    },
+    {
+      "id": "loose_location_clearance",
+      "name": "较松定位与方便拆卸",
+      "fit_type": "间隙配合",
+      "primary_fit": "H8/h8",
+      "alternatives": ["H9/h9", "H10/h10", "H11/h11"],
+      "max_diameter_mm": 3150,
+      "keywords": ["对中要求低", "方便拆卸", "负载不大无振动", "风动工具活塞与缸体"],
+      "basis": "较松 `h` 系列用于无相对运动、负载不大、无振动且要求拆卸方便的定位。",
+      "assembly": "手推滑入"
+    },
+    {
+      "id": "loose_transition",
+      "name": "最松过渡配合",
+      "fit_type": "过渡配合",
+      "primary_fit": "H7/js6",
+      "alternatives": ["H6/js5", "H8/js7", "JS6/h5", "JS7/h6", "JS8/h7"],
+      "max_diameter_mm": 3150,
+      "keywords": ["频繁拆卸", "最松过渡", "大部分得到间隙", "手锤或木锤装卸"],
+      "basis": "`js` 为完全对称偏差，平均稍有间隙；适合频繁拆卸且对中要求不高的场合。",
+      "assembly": "手锤或木锤装卸"
+    },
+    {
+      "id": "light_transition",
+      "name": "稍有过盈的定位配合",
+      "fit_type": "过渡配合",
+      "primary_fit": "H7/k6",
+      "alternatives": ["H6/k5", "H8/k7", "K6/h5", "K7/h6", "K8/h7"],
+      "max_diameter_mm": 3150,
+      "keywords": ["消除振动定位", "稍有过盈", "木锤装配", "无间隙定位"],
+      "basis": "`k` 平均无间隙，用于稍有过盈、需消除振动的定位配合。",
+      "assembly": "一般用木锤"
+    },
+    {
+      "id": "medium_transition",
+      "name": "中等紧度过渡配合",
+      "fit_type": "过渡配合",
+      "primary_fit": "H7/m6",
+      "alternatives": ["H6/m5", "H8/m7", "M6/h5", "M7/h6", "M8/h7"],
+      "max_diameter_mm": 3150,
+      "keywords": ["不大过盈", "中等紧度过渡", "最大过盈需压入力"],
+      "basis": "`m` 平均具有不大过盈，一般可木锤装配，最大过盈时需要较大压入力。",
+      "assembly": "木锤；必要时压入"
+    },
+    {
+      "id": "tight_transition",
+      "name": "紧密组件过渡配合",
+      "fit_type": "过渡配合",
+      "primary_fit": "H7/n6",
+      "alternatives": ["H6/n5", "H8/n7", "N6/h5", "N7/h6", "N8/h7"],
+      "max_diameter_mm": 3150,
+      "keywords": ["紧密组件", "过盈比m稍大", "锤或压力机装配"],
+      "basis": "`n` 平均过盈比 `m` 稍大，推荐用于紧密组件；H6/n5 时是过盈配合。",
+      "assembly": "锤或压力机"
+    },
+    {
+      "id": "standard_press",
+      "name": "轻或标准压入",
+      "fit_type": "过盈配合",
+      "primary_fit": "H7/p6",
+      "alternatives": ["H6/p5", "H8/p7", "P6/h5", "P7/h6"],
+      "max_diameter_mm": 3150,
+      "keywords": ["标准压入", "较轻压入", "必要时易拆卸", "铜钢组件压装"],
+      "basis": "`p` 与 H6/H7 孔为过盈；对非铁件为较轻压入，对钢/铸铁或铜/钢组件为标准压入。",
+      "assembly": "压力机压入"
+    },
+    {
+      "id": "light_press",
+      "name": "轻型永久压入",
+      "fit_type": "过盈配合",
+      "primary_fit": "H7/r6",
+      "alternatives": ["R7/h6"],
+      "max_diameter_mm": 3150,
+      "keywords": ["轻型永久压入", "不拆卸轻型过盈", "重载齿轮与轴", "刚性和对中性"],
+      "basis": "轻型压入用于不拆卸的轻型过盈连接，主要保证刚性、定位和对中；传递转矩需加紧固件。",
+      "assembly": "压力机压入"
+    },
+    {
+      "id": "medium_press",
+      "name": "中型压入",
+      "fit_type": "过盈配合",
+      "primary_fit": "H7/s6",
+      "alternatives": ["H6/s5", "H8/s7", "S6/h5", "S7/h6"],
+      "max_diameter_mm": 3150,
+      "keywords": ["中型压入", "传递较小转矩", "齿轮孔和轴", "含油轴承与轴承座"],
+      "basis": "中型压入不加紧固件可传递较小转矩；强度不足时可代替重型压入，但要加紧固件。",
+      "assembly": "压力机或温差"
+    },
+    {
+      "id": "heavy_press",
+      "name": "重型压入",
+      "fit_type": "过盈配合",
+      "primary_fit": "H7/u6",
+      "alternatives": ["H8/u7", "H6/t5", "H7/t6", "H8/t7", "U7/h6", "T6/h5", "T7/h6"],
+      "max_diameter_mm": 3150,
+      "keywords": ["重型压入", "传递较大转矩", "不加紧固件牢固连接", "轮箍与轮芯", "轧辊与心轴"],
+      "basis": "重型压入用于传递较大转矩，不加紧固件也可得到牢固连接。",
+      "assembly": "压力机或温差"
+    },
+    {
+      "id": "extra_heavy_press",
+      "name": "特重型压入",
+      "fit_type": "过盈配合",
+      "primary_fit": "H7/x6",
+      "alternatives": ["H7/v6", "H7/y6", "H7/z6"],
+      "max_diameter_mm": 500,
+      "keywords": ["特重型压入", "很大转矩变载冲击振动", "不加紧固件特重", "气缸盖与进气门座"],
+      "basis": "特重型压入用于很大转矩、变载、冲击或振动，配合处不加紧固件，且材料许用应力要求大。",
+      "assembly": "温差法"
+    }
+  ]
+}

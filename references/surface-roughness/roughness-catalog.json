@@ -1,0 +1,27 @@
+{
+  "title": "表面粗糙度的应用（用户提供资料的结构化摘要）",
+  "parameter": "Ra",
+  "unit": "μm",
+  "normative": false,
+  "source_notes": [
+    "原 PDF 共 2 页且为图片化表格。",
+    "100 μm 与 3.2 μm 行的应用示例在源表中出现重复；实际推荐应按功能和加工能力判断。",
+    "E、D、G 级滚动轴承属于旧式表述，使用前应核对现行标准或供应商资料。"
+  ],
+  "levels": [
+    {"row": 1, "ra_um": 100, "surface": "明显可见刀痕", "processes": ["粗车", "粗镗", "粗刨", "粗钻"], "functional_class": "very_rough_non_mating"},
+    {"row": 2, "ra_um": [50, 25], "surface": "明显可见刀痕", "processes": ["粗车", "粗镗", "粗刨", "粗钻"], "functional_class": "rough_before_weld_or_rough_bore"},
+    {"row": 3, "ra_um": 12.5, "surface": "可见刀痕", "processes": ["粗车", "刨", "铣", "钻"], "functional_class": "general_non_mating"},
+    {"row": 4, "ra_um": 6.3, "surface": "可见加工痕迹", "processes": ["车", "镗", "刨", "钻", "铣", "铰", "磨", "粗铰", "铣齿"], "functional_class": "low_importance_fit"},
+    {"row": 5, "ra_um": 3.2, "surface": "微见加工痕迹", "processes": ["车", "镗", "刨", "铣", "拉", "磨", "铰", "滚压", "铣齿"], "functional_class": "centering_or_key_working"},
+    {"row": 6, "ra_um": 1.6, "surface": "看不清加工痕迹", "processes": ["精车", "精镗", "精铣", "铰", "拉", "磨", "滚压", "细刮"], "functional_class": "normal_precision_fit"},
+    {"row": 7, "ra_um": 0.8, "surface": "可辨加工痕迹方向", "processes": ["铰", "拉", "磨", "立铣", "滚压", "细刮"], "functional_class": "accurate_fit_or_bearing"},
+    {"row": 8, "ra_um": 0.4, "surface": "微辨加工痕迹方向", "processes": ["精铰", "磨", "精镗", "拉", "滚压", "细刮"], "functional_class": "stable_fit_or_seal"},
+    {"row": 9, "ra_um": 0.2, "surface": "不可辨加工痕迹方向", "processes": ["布轮抛光", "磨", "研磨", "超级加工"], "functional_class": "fatigue_or_airtight"},
+    {"row": 10, "ra_um": 0.1, "surface": "暗光泽面", "processes": ["超级加工"], "functional_class": "hydraulic_or_precision_centering"},
+    {"row": 11, "ra_um": 0.05, "surface": "亮光泽面", "processes": ["超级加工"], "functional_class": "high_airtight_or_high_speed_friction"},
+    {"row": 12, "ra_um": 0.025, "surface": "镜面光泽面", "processes": ["超级加工"], "functional_class": "precision_instrument_or_gauge"},
+    {"row": 13, "ra_um": 0.012, "surface": "雾状镜面", "processes": ["超级加工"], "functional_class": "precision_measurement_or_large_gauge_block"},
+    {"row": 14, "ra_um": 0.0063, "surface": "雾状表面", "processes": ["超级加工"], "functional_class": "gauge_block_or_high_precision_support"}
+  ]
+}

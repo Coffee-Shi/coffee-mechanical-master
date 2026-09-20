@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "sources": [
+    "https://www.jlc-jdgf.com/mcbook/2-2-06.htm",
+    "https://www.jlc-jdgf.com/mcbook/new02099.htm",
+    "https://www.jlc-jdgf.com/mcbook/2-2-07.htm"
+  ],
+  "cost_note": "成本档 1、2.5、5 仅表示来源表中的相对比较，不是货币报价。",
+  "processes": [
+    {"surface": "hole", "name": "细铰", "it_min": 6, "it_max": 7, "capability_source": "切削经济精度", "cost_reference": "铰", "cost_tiers": [{"it_min": 7, "it_max": 8, "relative_cost": 5}]},
+    {"surface": "hole", "name": "精铰", "it_min": 7, "it_max": 8, "capability_source": "切削经济精度", "cost_reference": "铰", "cost_tiers": [{"it_min": 7, "it_max": 8, "relative_cost": 5}]},
+    {"surface": "hole", "name": "半精铰", "it_min": 8, "it_max": 9, "capability_source": "切削经济精度", "cost_reference": "铰", "cost_tiers": [{"it_min": 8, "it_max": 8, "relative_cost": 5}, {"it_min": 9, "it_max": 9, "relative_cost": 2.5}]},
+    {"surface": "hole", "name": "细镗", "it_min": 6, "it_max": 7, "capability_source": "切削经济精度", "cost_reference": "精镗", "cost_tiers": [{"it_min": 6, "it_max": 7, "relative_cost": 2.5}]},
+    {"surface": "hole", "name": "精镗", "it_min": 8, "it_max": 10, "capability_source": "切削经济精度", "cost_reference": "精镗", "cost_tiers": [{"it_min": 8, "it_max": 9, "relative_cost": 1}]},
+    {"surface": "hole", "name": "半精镗", "it_min": 11, "it_max": 11, "capability_source": "切削经济精度", "cost_reference": "镗", "cost_tiers": [{"it_min": 11, "it_max": 12, "relative_cost": 1}]},
+    {"surface": "hole", "name": "细磨孔", "it_min": 6, "it_max": 6, "capability_source": "切削经济精度", "cost_reference": "内圆磨", "cost_tiers": [{"it_min": 6, "it_max": 7, "relative_cost": 2.5}]},
+    {"surface": "hole", "name": "精磨孔", "it_min": 7, "it_max": 7, "capability_source": "切削经济精度", "cost_reference": "内圆磨", "cost_tiers": [{"it_min": 6, "it_max": 7, "relative_cost": 2.5}]},
+    {"surface": "hole", "name": "粗磨孔", "it_min": 8, "it_max": 9, "capability_source": "切削经济精度", "cost_reference": "内圆磨", "cost_tiers": [{"it_min": 8, "it_max": 9, "relative_cost": 1}]},
+    {"surface": "hole", "name": "研/珩磨", "it_min": 6, "it_max": 6, "capability_source": "切削经济精度", "cost_reference": "研磨", "cost_tiers": [{"it_min": 6, "it_max": 7, "relative_cost": 1}]},
+    {"surface": "hole", "name": "拉孔", "it_min": 7, "it_max": 9, "capability_source": "切削经济精度", "cost_reference": null, "cost_tiers": []},
+    {"surface": "hole", "name": "钻/扩钻", "it_min": 11, "it_max": 13, "capability_source": "切削经济精度", "cost_reference": "钻", "cost_tiers": [{"it_min": 10, "it_max": 11, "relative_cost": 5}, {"it_min": 12, "it_max": 13, "relative_cost": 2.5}, {"it_min": 14, "it_max": 14, "relative_cost": 1}]},
+    {"surface": "shaft", "name": "精车", "it_min": 6, "it_max": 9, "capability_source": "切削经济精度", "cost_reference": "普通车削", "cost_tiers": [{"it_min": 6, "it_max": 8, "relative_cost": 5}, {"it_min": 9, "it_max": 9, "relative_cost": 2.5}]},
+    {"surface": "shaft", "name": "半精车", "it_min": 10, "it_max": 11, "capability_source": "切削经济精度", "cost_reference": "普通车削", "cost_tiers": [{"it_min": 10, "it_max": 11, "relative_cost": 2.5}]},
+    {"surface": "shaft", "name": "粗车", "it_min": 12, "it_max": 14, "capability_source": "切削经济精度", "cost_reference": "普通车削", "cost_tiers": [{"it_min": 12, "it_max": 14, "relative_cost": 1}]},
+    {"surface": "shaft", "name": "精磨外圆", "it_min": 6, "it_max": 7, "capability_source": "切削经济精度", "cost_reference": "外圆磨", "cost_tiers": [{"it_min": 5, "it_max": 6, "relative_cost": 2.5}, {"it_min": 7, "it_max": 8, "relative_cost": 1}]},
+    {"surface": "shaft", "name": "粗磨外圆", "it_min": 8, "it_max": 9, "capability_source": "切削经济精度", "cost_reference": "外圆磨", "cost_tiers": [{"it_min": 8, "it_max": 8, "relative_cost": 1}]},
+    {"surface": "shaft", "name": "研磨", "it_min": 5, "it_max": 5, "capability_source": "切削经济精度", "cost_reference": null, "cost_tiers": []},
+    {"surface": "shaft", "name": "金刚石车", "it_min": 5, "it_max": 7, "capability_source": "通用能力表", "cost_reference": null, "cost_tiers": []}
+  ]
+}
