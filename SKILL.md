@@ -1,11 +1,11 @@
 ---
 name: coffee-mechanical-master
-description: Select mechanical surface roughness and hole-and-shaft limits/fits from bundled knowledge bases. Use for Ra recommendations, drawing surface analysis, tolerance grades, fit designations, machining routes, compliance checks, and relative cost; route combined fitted-surface questions through both modules.
+description: AI assistant for mechanical design, drafting, and manufacturing that routes work to bundled specialist modules. Currently use it for Ra surface-roughness selection, drawing surface analysis, hole-and-shaft tolerance grades and fits, machining routes, compliance checks, and relative cost.
 ---
 
 # Coffee机械大师
 
-把问题路由到“表面粗糙度”与“极限与配合”两个知识库。不得用模型常识、网络资料或未确认的假设冒充知识库结论。
+利用 AI 理解机械设计、制图和制造问题，并路由到相应的专业小 Skill。当前包含“表面粗糙度选择”和“极限与配合”两个模块；不得用模型常识、网络资料或未确认的假设冒充知识库结论。
 
 ## 路由
 
