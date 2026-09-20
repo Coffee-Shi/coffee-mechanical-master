@@ -10,12 +10,12 @@
 - 同一配合面需要公差与粗糙度时，先做配合决策，再给出相容的粗糙度；
 - 资料不足时先提问，不把未确认条件当作默认值。
 
-知识库分别来自原公开仓库：
+知识库由原来的两个小仓库完整合并而来；源文件和 Git 提交历史都保存在本仓库：
 
-- [coffee-surface-roughness-selector](https://github.com/Coffee-Shi/coffee-surface-roughness-selector)
-- [coffee-limits-and-fits](https://github.com/Coffee-Shi/coffee-limits-and-fits)
+- [表面粗糙度旧仓库最终历史](https://github.com/Coffee-Shi/coffee-mechanical-master/tree/legacy-roughness-final)
+- [极限与配合旧仓库最终历史](https://github.com/Coffee-Shi/coffee-mechanical-master/tree/legacy-limits-and-fits-final)
 
-旧仓库保留用于历史追溯；后续功能更新以本仓库为准。
+原来的两个小仓库已停止维护并删除。后续新增机械设计知识、脚本与功能统一加入本仓库，并通过同一个 `coffee-mechanical-master` Skill 提供。
 
 ## 安装与自动更新
 
