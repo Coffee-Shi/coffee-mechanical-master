@@ -12,7 +12,7 @@ description: AI assistant for mechanical design, drafting, and manufacturing tha
 - 用户询问 `Ra`、粗糙度符号、表面用途、密封/摩擦/轴承表面或加工纹理时，读取 [表面粗糙度工作流](references/surface-roughness/workflow.md)。
 - 用户询问尺寸公差、IT 等级、孔轴公差带、间隙/过渡/过盈配合、极限尺寸、加工成本时，读取 [极限与配合工作流](references/limits-and-fits/workflow.md)。
 - 同一个孔轴配合面同时需要公差和粗糙度时，两份工作流都读取；先确定配合功能和公差家族，再选择与该功能相容的粗糙度。输出中分别标明两套知识库依据。
-- 图纸、照片或扫描件中的目标表面不清楚时，先让用户圈选或确认。DXF、STEP/STP、STL、3MF 等 CAD 文件优先用已安装的 `cad-viewer` 定位几何；缺少该能力时要求提供可辨认的截图或视图。
+- 粗糙度图纸、照片、截图或扫描件输入前，声明并确认已提前安装 [text-to-cad](https://github.com/earthtojake/text-to-cad)；借助其相关查看能力辅助定位目标表面。DXF、STEP/STP、STL、3MF 等 CAD 文件优先用其中的 `cad-viewer` 定位几何；普通 JPG、PNG 和扫描 PDF 由视觉能力识别，目标表面不清楚时要求用户圈选或确认。
 
 ## 共同门禁
 

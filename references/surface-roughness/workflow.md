@@ -5,7 +5,7 @@
 ## 需要读取的资料
 
 - 文字描述：读取 [selection-guide.md](selection-guide.md)，按表面功能分类。
-- 图纸、照片、扫描件或 PDF：同时读取 [drawing-analysis.md](drawing-analysis.md)。
+- 图纸、照片、扫描件或 PDF：先声明需要提前安装 [text-to-cad](https://github.com/earthtojake/text-to-cad)，同时读取 [drawing-analysis.md](drawing-analysis.md)；借助 text-to-cad 的相关查看能力辅助定位目标表面。普通 JPG、PNG 和扫描 PDF 的像素识别仍由视觉能力完成。
 - 需要核对原始 14 档数据、应用示例或旧等级表述：读取 [roughness-catalog.json](roughness-catalog.json)。
 - 已能归入确定场景时，可运行 `../../scripts/roughness/recommend_ra.py --scenario <场景>`；脚本只做查表。
 

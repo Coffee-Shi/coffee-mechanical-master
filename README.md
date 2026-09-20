@@ -62,7 +62,7 @@ powershell -ExecutionPolicy Bypass -File `
 
 Codex 会自动检测本地 Skill 文件变化；若界面没有及时刷新，重启 Codex。
 
-如果需要直接分析 DXF、STEP/STP、STL、3MF 等 CAD 文件，建议提前安装 [text-to-cad](https://github.com/earthtojake/text-to-cad) 中的 `cad-viewer`。JPG、PNG、局部截图和扫描 PDF 可直接使用 Codex 的视觉能力分析。
+粗糙度图纸、截图或 CAD 文件查看需要提前安装 [text-to-cad](https://github.com/earthtojake/text-to-cad)。Coffee机械大师会借助它的相关查看能力辅助定位目标表面；其中 `cad-viewer` 主要用于 DXF、STEP/STP、STL、3MF 等 CAD 几何，JPG、PNG 和扫描 PDF 仍由 Codex 视觉能力识别。
 
 取消自动更新：
 
