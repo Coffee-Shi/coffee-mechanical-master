@@ -1,0 +1,4 @@
+interface:
+  display_name: "Coffee机械大师：极限与配合"
+  short_description: "根据机械配合场景推荐公差等级、公差带、加工工艺与相对成本"
+  default_prompt: "使用 $coffee-limits-and-fits 根据配合场景和基本尺寸，仅从知识库推荐公差等级、公差带配合、加工与检验方案及相对成本。"
