@@ -24,11 +24,15 @@
 
 适用示例包括轴颈、轴承配合面、液压阀芯、缸孔、密封面、定位面、测量面和普通非配合面。
 
+详细查看：[工作流说明](https://github.com/Coffee-Shi/coffee-mechanical-master/blob/main/references/surface-roughness/workflow.md) · [选型指南](https://github.com/Coffee-Shi/coffee-mechanical-master/blob/main/references/surface-roughness/selection-guide.md) · [图纸分析](https://github.com/Coffee-Shi/coffee-mechanical-master/blob/main/references/surface-roughness/drawing-analysis.md) · [粗糙度数据](https://github.com/Coffee-Shi/coffee-mechanical-master/blob/main/references/surface-roughness/roughness-catalog.json) · [查表脚本](https://github.com/Coffee-Shi/coffee-mechanical-master/blob/main/scripts/roughness/recommend_ra.py)
+
 ### 2. 极限与配合
 
 根据孔轴基本尺寸、相对运动、速度、载荷、润滑、温度、定心精度、拆装要求、材料和装配方式，选择公差等级、公差带以及间隙、过渡或过盈配合，并提供知识库支持的加工路线和相对成本。
 
 资料不充分时只提出澄清问题；只有能够唯一确定配合家族并排除相邻候选时，才输出推荐标注。
+
+详细查看：[工作流说明](https://github.com/Coffee-Shi/coffee-mechanical-master/blob/main/references/limits-and-fits/workflow.md) · [信息门禁](https://github.com/Coffee-Shi/coffee-mechanical-master/blob/main/references/limits-and-fits/intake-checklist.md) · [优先配合](https://github.com/Coffee-Shi/coffee-mechanical-master/blob/main/references/limits-and-fits/preferred-fits.md) · [公差数据](https://github.com/Coffee-Shi/coffee-mechanical-master/tree/main/references/limits-and-fits/data) · [查表脚本](https://github.com/Coffee-Shi/coffee-mechanical-master/blob/main/scripts/fits/fit_lookup.py)
 
 当同一个配合面同时需要公差和粗糙度时，Coffee机械大师会先确定配合功能和公差方案，再调用表面粗糙度小 Skill 选择相容的 `Ra`。
 
